@@ -40,17 +40,14 @@
 
 	<update id="updateReply"
 		 parameterType="co.yedam.reply.service.ReplyVO">
-		UPDATE reply SET reply =#{reply},
-		replyer=#{replyer},
-		reply_date=#{replyDate}
-
+		UPDATE reply SET reply =#{reply}
 		where reply_no=#{replyNo}
 	</update>
 
 	<delete id="deleteReply"
 	 parameterType="int">
-		delete from
-		reply where reply_no=#{replyNo}
+		delete from reply
+		 where reply_no=#{replyNo}
 	</delete>
 	
 	<select id = "getTotalCnt" resultType = "int">

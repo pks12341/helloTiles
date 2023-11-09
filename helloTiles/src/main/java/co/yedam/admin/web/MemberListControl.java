@@ -14,11 +14,11 @@ public class MemberListControl implements Command {
 	@Override
 	public void execute(HttpServletRequest req, HttpServletResponse resp) {
 		// TODO Auto-generated method stub
-		String path = "member/memberList.tiles";
+		String path = "admin/memberList.tiles";
 
 		List<MemberVO> list = new ArrayList<>();
 		list.add(new MemberVO());
-		req.setAttribute("list", list);
+		req.setAttribute("memberList", list);
 
 		try {
 			req.getRequestDispatcher(path).forward(req, resp);

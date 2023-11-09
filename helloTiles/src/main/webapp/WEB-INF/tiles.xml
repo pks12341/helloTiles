@@ -6,6 +6,8 @@
 		name="header" value="/tiles/banner.jsp" /> <put-attribute name="menu" value="/tiles/common_menu.jsp" 
 		/> <put-attribute name="body" value="/tiles/home_body.jsp" /> <put-attribute 
 		name="footer" value="/tiles/credits.jsp" /> </definition> </! -->
+		
+		<!-- 정의되어진 순서대로 실행된다 -->
 	<definition name="boardpage"
 		template="/WEB-INF/layouts/template.jsp">
 		<put-attribute name="title" value="게시판 템플릿" />

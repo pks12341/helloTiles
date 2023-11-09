@@ -5,7 +5,7 @@ import java.util.Map;
 
 import org.apache.ibatis.session.SqlSession;
 
-import co.yedam.common.DataSource;
+
 import co.yedam.common.DataSourceMybatis;
 import co.yedam.reply.mapper.ReplyMapper;
 import co.yedam.reply.service.ReplyService;

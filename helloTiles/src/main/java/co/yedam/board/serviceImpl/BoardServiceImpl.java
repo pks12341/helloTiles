@@ -3,17 +3,15 @@ package co.yedam.board.serviceImpl;
 import java.util.List;
 
 import org.apache.ibatis.session.SqlSession;
-import org.apache.ibatis.session.SqlSessionFactory;
 
-import co.yedam.admin.service.MemberVO;
 import co.yedam.board.mapper.BoardMapper;
 import co.yedam.board.service.BoardService;
 import co.yedam.board.service.BoardVO;
-//import co.yedam.common.DataSourceMybatis;
+
 import co.yedam.common.DataSourceMybatis;
 
 public class BoardServiceImpl implements BoardService {
-	BoardDAO dao = new BoardDAO();	
+		
 	
 	SqlSession sqlSession = DataSourceMybatis.getInstance().openSession(true); //true는 자동커밋을한다는뜻
 	BoardMapper mapper = sqlSession.getMapper(BoardMapper.class);
@@ -53,18 +51,18 @@ public class BoardServiceImpl implements BoardService {
 		return mapper.delete(boardNo) ==1;
 	}
 
-	@Override
-	public MemberVO loginCheck(String id, String pw) {
-	//	return dao.getUser(id, pw);
-		return mapper.getUser(id, pw);
-	}
-
-	@Override
-	public List<MemberVO> memberList() {
-		// TODO Auto-generated method stub
-	//	return dao.memberList();
-		return mapper.memberList();
-	}	
+//	@Override
+//	public MemberVO loginCheck(String id, String pw) {
+//	//	return dao.getUser(id, pw);
+//		return mapper.getUser(id, pw);
+//	}
+//
+//	@Override
+//	public List<MemberVO> memberList() {
+//		// TODO Auto-generated method stub
+//	//	return dao.memberList();
+//		return mapper.memberList();
+//	}	
 
 	
 

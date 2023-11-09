@@ -35,10 +35,10 @@ public class ReplyListControl implements Command {
 		
 		List<ReplyVO> list = 
 				svc.replyList(Integer.parseInt(bno),Integer.parseInt(page));
-		
-		System.out.println(bno);
-		System.out.println(page);
-		System.out.println(list);
+//		
+//		System.out.println(bno);
+//		System.out.println(page);
+//		System.out.println(list);
 		
 		//list, dto.
 		Map<String, Object> map = new HashMap<>();

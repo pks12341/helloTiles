@@ -7,10 +7,9 @@
 	<thead>
 		<tr>
 			<th>아이디</th>
-			<th>비밀번호</th>
 			<th>이름</th>
-			<th>전화번호</th>
-			<th>회원분류</th>
+			<th>연락처</th>
+			
 		</tr>
 	</thead>
 	<tbody>
@@ -19,8 +18,7 @@
 			<td>${member.mid }</td>
 			<td>${member.name }</td>
 			<td>${member.phone }</td>
-			<td>${member.pass }</td>			
-			<td>${member.responsbility }</td>			
+		
 		</tr>
 	</c:forEach>
 	</tbody>

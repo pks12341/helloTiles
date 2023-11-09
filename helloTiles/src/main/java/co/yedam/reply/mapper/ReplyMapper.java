@@ -7,7 +7,7 @@ import org.apache.ibatis.annotations.Param;
 
 import co.yedam.reply.service.ReplyVO;
 
-//DAO, mapper : select, insert, update, delete 등 실제로 쓰는 용어를 쓰는게 좋다 add edit이런거말고
+//DAO, mapper : select, insert, update, delete 등 db에서 실제로 쓰는 용어를 쓰는게 좋다 add edit이런거말고
 public interface ReplyMapper {
 	public List<ReplyVO> replyList(@Param("boardNo") int boardNo, @Param("page") int page); //목록.
 	public ReplyVO selectReply(int replyNo);//단건조회
